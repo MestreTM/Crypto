@@ -9,7 +9,7 @@ for example if you have IDs like: ABCD.1234, ABCD.5678
 the line below should look like this:
 const encryptedIdPrefix = 'ABCD';
 and then you can share those IDs instead: 1234, 5678
-*/
+*/ 
 const encryptedIdPrefix = '';
 
   </script>
@@ -176,7 +176,7 @@ pre{color:unset;}
         <h5>Add another account:</h5>
         <div class="form-row align-items-center pb-3">
           <div class="col-3 col-lg-2">
-            <button id="get_auth" class="btn btn-primary btn-block">Get auth</button>
+            <button id="get_auth" class="btn btn-primary btn-block">obter autenticação</button>
           </div>
           <div class="col">
             <input id="auth_input" type="text" class="form-control" placeholder="Paste auth code here">
@@ -272,21 +272,21 @@ https://drive.google.com/open?id=&lt;folder id&gt;</pre></code>
       <div class="modal-body">
         <div class="alert alert-primary">Se você receber o erro "Rate Limit Exceeded" espere um minuto e tente novamente.</div>
         <h5>1. Log in.</h5>
-        <p>Clique em <b>Selecionar conta</b> button. If you logged in before you can select your account from the list. If you want to add a new account click on the <b>Get auth</b> button, follow the steps on screen, copy authorization code, paste it to the input field and press <b>Continue</b>.</p>
-        <p>After logging in you will see your name, email and free space on your drive listed in the first box. Click on the <b>Switch</b> button to switch to another account.</p>
-        <h5>2. Select destination folder and manage your files.</h5>
-        <p>The second box lets you manage files on your drive. Click on the <b>Select</b> button to choose the destination folder for copied files. Click on the <b>Reload</b> button to load list of your files in this folder again.</p>
-        <div class="alert alert-warning">Only files copied using this tool are displayed there!</div>
-        <p>Select some files and press <b>Share</b> to copy their public links - this is useful if you're using <b>JDownloader</b> for downloading files. Click on the <b>Delete</b> or <b>Trash</b> buttons to remove files completely or move them to the trash.</p>
-        <h5>3. Copy files</h5>
-        <p>Paste encrypted folder ID or a normal folder link to the input field in the third box and press <b>Load</b>.
-        <div class="alert alert-danger">If you use encrypted folder ID then your access token is sent to the decryption server. Lifespan of that token is one hour. That means for one hour that server has access to your whole Google Drive! That's why you should always use a dummy account. The default decryption server code doesn't store anything but all it takes is one malicious person with a modified decryption server to wipe out your Google Drive or worse, steal your data. If you're using encrypted folder IDs with your main account - make sure you trust the person that shared it.</div>
-        <p>Click on the <b>.MD5</b> button to download MD5 hashsums for all listed files. Select some files and press <b>Copy</b> to copy them to your drive.</p>
+        <p>Clique no botão <b>Selecionar conta</b> Se você se logou antes, pode selecionar sua conta na lista. Se você deseja adicionar uma nova conta, clique no botão <b>obter autenticação</b>, siga as etapas na tela, copie o código de autorização, cole-o no campo de entrada e pressione <b>Continue</b>.</p>
+        <p>Após o login, você verá seu nome, e-mail e espaço livre em sua unidade listados na primeira caixa. Clique no botão <b>Switch</b> para mudar para outra conta.</p>
+        <h5>2. Selecione a pasta de destino e gerencie seus arquivos.</h5>
+        <p>A segunda caixa permite gerenciar arquivos em sua unidade. Clique no botão <b>Select</b> para escolher a pasta de destino para os arquivos copiados. Clique no botão <b>Reload</b> para recarregar a lista de seus arquivos nesta pasta.</p>
+        <div class="alert alert-warning">Somente arquivos copiados usando esta ferramenta são exibidos lá!</div>
+        <p>Selecione alguns arquivos e pressione <b>Share</b> para copiar seus links públicos - isso é útil se você estiver usando o programa <b>JDownloader</b> para baixar arquivos. Clique nos botões <b>Delete</b> ou <b>Trash</b> para remover arquivos completamente ou movê-los para a lixeira.</p>
+        <h5>3. Copiando arquivos</h5>
+        <p>Cole o ID da pasta criptografada ou um link de pasta normal no campo de entrada na terceira caixa e pressione <b>Load</b>.
+        <div class="alert alert-danger">Se você usar um ID de pasta criptografado, seu token de acesso será enviado ao servidor de descriptografia. A vida útil desse token é de uma hora. Isso significa que por uma hora esse servidor tem acesso a todo o seu Google Drive! É por isso que você deve sempre usar uma conta fictícia. O código do servidor de descriptografia padrão não armazena nada, mas basta uma pessoa mal-intencionada com um servidor de descriptografia modificado para limpar seu Google Drive ou pior, roubar seus dados. Se você estiver usando IDs de pasta criptografados com sua conta principal, certifique-se de confiar na pessoa que a compartilhou.</div>
+        <p>Clique no botão <b>.MD5</b> para baixar hashsums MD5 para todos os arquivos listados. Selecione alguns arquivos e pressione <b>Copy</b> para copiar para seu Drive.</p>
         <hr>
-        <h5>Best practices</h5>
-        <p>If you're just downloading files - use a dummy acc. Copy files to your drive, download them and then delete from your drive.</p>
-        <div class="alert alert-primary">Tip: if your destination folder is already made public all files copied to it are public too, that saves you some time.</div>
-        <p>If you want to store files on your main account - open two tabs. In the first tab log into your dummy account and use encrypted folder ID to copy files to dummy account. In second tab log into your main account and use folder link from the dummy account to copy files from dummy account to your main one.</p>
+        <h5>Melhores Práticas</h5>
+        <p>Se você estiver apenas baixando arquivos - use um acc fake. Copie arquivos para sua unidade, baixe-os e depois exclua-os da unidade.</p>
+        <div class="alert alert-primary">Dica: se sua pasta de destino já foi tornada pública, todos os arquivos copiados para ela também são públicos, isso economiza tempo.</div>
+        <p>Se você deseja armazenar arquivos em sua conta principal - abra duas guias. Na primeira guia, faça login em sua conta fictícia e use o ID da pasta criptografada para copiar arquivos para a conta fictícia. Na segunda guia, faça login em sua conta principal e use o link da pasta da conta fictícia para copiar os arquivos da conta fictícia para a conta principal.</p>
       </div>
     </div>
   </div>
